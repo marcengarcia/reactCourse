@@ -1,10 +1,12 @@
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NexExpense/NexExpense";
+
 
 const App = () => {
   const expenses = [
     {
       id: 'e1',
-      title: 'Toilet Paper',
+      title: 'Cartas magic',
       amount: 94.12,
       date: new Date(2020, 7, 14),
     },
@@ -24,7 +26,7 @@ const App = () => {
   ];
   return (
     <div>
-      <h2>My Expenses</h2>
+      <NewExpense/>
       <Expenses items={expenses} />
     </div>
   );
